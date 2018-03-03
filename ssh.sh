@@ -1,4 +1,4 @@
-PRIVATE_KEY="### your .pem key name ###"
+PRIVATE_KEY="AWS.pem"
 
 AWS=`aws ec2 describe-instances --query 'Reservations[*].Instances[*].PublicDnsName' --output text`
 echo "ssh-ing into $AWS"
